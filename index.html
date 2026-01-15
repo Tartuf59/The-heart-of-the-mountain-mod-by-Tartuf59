@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heart of the Mountain Mod</title>
+    <style>
+        /* Couleurs et Police */
+        :root {
+            --bg-color: #1a1a1a;
+            --container-bg: #2d2d2d;
+            --accent-color: #00d4ff;
+            --text-color: #f0f0f0;
+            --secondary-text: #bbbbbb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Conteneur principal */
+        .card {
+            background-color: var(--container-bg);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            text-align: center;
+            border: 1px solid #444;
+            margin: 20px;
+        }
+
+        /* Titre */
+        h1 {
+            color: var(--accent-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        /* Texte */
+        p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+            color: var(--secondary-text);
+            text-align: justify;
+        }
+
+        /* Liste des fonctionnalités (Optionnel pour le style) */
+        .features {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+
+        .feature-item {
+            background: #3d3d3d;
+            padding: 8px;
+            border-radius: 5px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        /* Animation au survol */
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>The-heart-of-the-mountain-mod-by-Tartuf59</h1>
+        
+        <p>
+            The heart of the mountain is a Minecraft mod that adds 2 objects: 
+            tools and armor for one, and for the other, which are found in a 
+            secret laboratory. This is used to make 2 very rare and useful items 
+            for the player. This mod therefore also adds 2 structures, 1 music disc, 
+            1 book, and many challenges.
+        </p>
+
+        <div class="features">
+            <div class="feature-item">⚒️ New Tools & Armor</div>
+            <div class="feature-item">🧪 Secret Laboratory</div>
+            <div class="feature-item">🏰 2 Structures</div>
+            <div class="feature-item">🎵 1 Music Disc</div>
+            <div class="feature-item">📖 1 Custom Book</div>
+            <div class="feature-item">🏆 Many Challenges</div>
+        </div>
+    </div>
+
+</body>
+</html>
