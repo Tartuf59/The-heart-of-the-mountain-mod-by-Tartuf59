@@ -23,6 +23,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            padding: 20px;
         }
 
         /* Conteneur principal */
@@ -31,16 +32,15 @@
             padding: 2.5rem;
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            max-width: 600px;
+            max-width: 650px;
             text-align: center;
             border: 1px solid #444;
-            margin: 20px;
         }
 
         /* Titre */
         h1 {
             color: var(--accent-color);
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -56,7 +56,28 @@
             text-align: justify;
         }
 
-        /* Liste des fonctionnalités (Optionnel pour le style) */
+        /* Galerie d'images */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .screenshot {
+            background: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid #444;
+            aspect-ratio: 16 / 9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 0.8rem;
+            overflow: hidden;
+        }
+
+        /* Liste des fonctionnalités */
         .features {
             margin-top: 20px;
             display: grid;
@@ -70,6 +91,26 @@
             padding: 8px;
             border-radius: 5px;
             border-left: 3px solid var(--accent-color);
+            text-align: left;
+        }
+
+        /* Bouton de téléchargement */
+        .download-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--accent-color);
+            color: #1a1a1a;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #fff;
+            transform: scale(1.05);
         }
 
         /* Animation au survol */
@@ -92,6 +133,15 @@
             1 book, and many challenges.
         </p>
 
+        <div class="gallery">
+            <div class="screenshot">
+                [ Screenshot: Laboratory ]
+            </div>
+            <div class="screenshot">
+                [ Screenshot: Items ]
+            </div>
+        </div>
+
         <div class="features">
             <div class="feature-item">⚒️ New Tools & Armor</div>
             <div class="feature-item">🧪 Secret Laboratory</div>
@@ -100,6 +150,8 @@
             <div class="feature-item">📖 1 Custom Book</div>
             <div class="feature-item">🏆 Many Challenges</div>
         </div>
+
+        <a href="#" class="download-btn">Download Mod</a>
     </div>
 
 </body>
