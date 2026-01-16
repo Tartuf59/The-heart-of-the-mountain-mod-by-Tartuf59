@@ -1,4 +1,4 @@
-The-heart-of-the-mountain-mod-by-Tartuf59 :
+The heart of the mountain mod by Tartuf59 :
 
 Tartuf59 AND Theo-F
 
