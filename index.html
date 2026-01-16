@@ -35,6 +35,11 @@
             max-width: 650px;
             text-align: center;
             border: 1px solid #444;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
         }
 
         /* Titre */
@@ -48,25 +53,25 @@
             padding-bottom: 10px;
         }
 
+        /* Style de l'image unique */
+        .screenshot {
+            background: #1a1a1a;
+            border-radius: 8px;
+            border: 1px solid #444;
+            width: 100%;
+            height: auto; /* Hauteur automatique pour ne pas déformer */
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+            margin: 20px 0;
+        }
+
         /* Texte */
         p {
             line-height: 1.8;
             font-size: 1.1rem;
             color: var(--secondary-text);
             text-align: justify;
-        }
-
-        .screenshot {
-            background: #1a1a1a;
-            border-radius: 8px;
-            border: 1px solid #444;
-            aspect-ratio: 16 / 9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #555;
-            font-size: 0.8rem;
-            overflow: hidden;
         }
 
         /* Liste des fonctionnalités */
@@ -85,6 +90,7 @@
             border-left: 3px solid var(--accent-color);
             text-align: left;
         }
+
         /* Bouton de téléchargement */
         .download-btn {
             display: inline-block;
@@ -103,12 +109,6 @@
             background-color: #fff;
             transform: scale(1.05);
         }
-
-        /* Animation au survol */
-        .card:hover {
-            transform: translateY(-5px);
-            transition: 0.3s ease;
-        }
     </style>
 </head>
 <body>
@@ -116,22 +116,28 @@
     <div class="card">
         <h1>The heart of the mountain mod by Tartuf59</h1>
         
+        <img src="img1.png" class="screenshot" alt="Mod Screenshot">
+        
         <p>
             The heart of the mountain is a Minecraft mod that adds 2 ores,
             tools and armor for one, and for the other, which are found in a 
             secret laboratory. This is used to make 2 very rare and useful items 
             for the player. This mod therefore also adds 3 structures, 1 music disc, 
-            1 book, and many challenges. The mod is translated into 3 languages, English, French and Breton.
+            1 book, and many challenges. The mod is translated into 3 languages: 
+            English, French, and Breton.
         </p>
+
         <div class="features">
             <div class="feature-item">⚒️ New Tools & Armor</div>
-            <div class="feature-item">🖐️ 3 Languages</div>
+            <div class="feature-item">🌍 3 Languages</div>
             <div class="feature-item">🏰 3 Structures</div>
             <div class="feature-item">🎵 1 Music Disc</div>
             <div class="feature-item">📖 1 Custom Book</div>
             <div class="feature-item">🏆 Many Challenges</div>
         </div>
+
         <a href="#" class="download-btn">Download Mod</a>
     </div>
+
 </body>
 </html>
