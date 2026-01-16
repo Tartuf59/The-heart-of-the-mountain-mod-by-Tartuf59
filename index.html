@@ -13,6 +13,7 @@
             --yt-color: #ff0000;
             --text-color: #f0f0f0;
             --secondary-text: #bbbbbb;
+            --alpha-color: #ffcc00;
         }
 
         body {
@@ -47,11 +48,23 @@
         h1 {
             color: var(--accent-color);
             font-size: 1.8rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
+        }
+
+        /* Badge Version Alpha */
+        .version-badge {
+            display: inline-block;
+            background-color: rgba(255, 204, 0, 0.1);
+            color: var(--alpha-color);
+            border: 1px solid var(--alpha-color);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
         }
 
         /* Style de l'image unique */
@@ -139,12 +152,13 @@
 <body>
 
     <div class="card">
-        <h1>The heart of the mountain mod by Tartuf59</h1>
+        <h1>The heart of the mountain</h1>
+        <div class="version-badge">Alpha Version 0.9.9</div>
         
         <img src="img1.png" class="screenshot" alt="Mod Screenshot">
         
         <p>
-            The heart of the mountain is a Minecraft mod that adds 2 ores,
+            The heart of the mountain is a Minecraft mod by Tartuf59 that adds 2 ores,
             tools and armor for one, and for the other, which are found in a 
             secret laboratory. This is used to make 2 very rare and useful items 
             for the player. This mod therefore also adds 3 structures, 1 music disc, 
