@@ -85,6 +85,30 @@
             border-left: 3px solid var(--accent-color);
             text-align: left;
         }
+        /* Bouton de téléchargement */
+        .download-btn {
+            display: inline-block;
+            margin-top: 30px;
+            background-color: var(--accent-color);
+            color: #1a1a1a;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+        }
+
+        /* Animation au survol */
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -107,5 +131,7 @@
             <div class="feature-item">📖 1 Custom Book</div>
             <div class="feature-item">🏆 Many Challenges</div>
         </div>
+        <a href="#" class="download-btn">Download Mod</a>
+    </div>
 </body>
 </html>
